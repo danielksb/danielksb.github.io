@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+<head>
+    <title>PDF Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="icons/edit48x48.ico" />
+</head>
+
+<body>
+    <div class="hero is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <div class="navbar-item">PDF Editor</div>
+                </div>
+            </nav>
+            <div class="panel">
+                <div class="panel-block">
+                    <div class="file">
+                        <label class="file-label">
+                            <input type="file" accept=".pdf" id="file-input" class="file-input">
+                            <span class="file-cta">
+                                <span class="file-icon">
+                                    <em class="icon" data-feather="upload"></em>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                    <a hidden id="download-link" target="_blank"></a>
+                    <button id="save-btn"
+                        class="button ml-1"
+                        title="Download the edited PDF file">
+                        <span class="icon" data-feather="save"></span>
+                    </button>
+                    <div class="block m-1">
+                        <span>Page: <input class="input is-small" id="page_num" type="number" min="1" disabled="true"></input> / <span id="page_count"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-body">
+            <div class="container canvas-container">
+                <canvas id="the-canvas"></canvas>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="panel">
+                    <div class="panel-block is-justify-content-space-between">
+                        <div>
+                            <button id="prev"
+                                class="button ml-1"
+                                title="Display previous page">
+                                <span class="icon" data-feather="skip-back"></span>
+                            </button>
+                            <button id="next"
+                                class="button ml-1"
+                                title="Display next page">
+                                <span class="icon" data-feather="skip-forward"></span>
+                            </button>
+                        </div>
+                        <div>
+                            <button id="rotate"
+                                class="button ml-1"
+                                title="Rotate current page clockwise">
+                                <span class="icon" data-feather="rotate-cw"></span>
+                            </button>
+                            <button id="remove-page-btn"
+                                class="button ml-1"
+                                title="Remove current page from PDF">
+                                <span class="icon" data-feather="file-minus"></span>
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>

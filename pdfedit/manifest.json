@@ -1,0 +1,19 @@
+{
+    "name": "pdfedit",
+    "icons": [
+        {
+            "src": "icons/edit32x32.ico",
+            "sizes": "32x32"
+        },
+        {
+            "src": "icons/edit48x48.ico",
+            "sizes": "48x48"
+        },
+        {
+            "src": "icons/edit64x64.ico",
+            "sizes": "64x64"
+        }
+    ],
+    "display": "standalone",
+    "start_url": "/"
+}
