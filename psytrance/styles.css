@@ -107,6 +107,8 @@ blockquote {
     border: 3px solid var(--black);
     background-color: var(--blockquote);
     color: var(--blockquote-text);
+    margin-left: 0.25em;
+    margin-right: 0.25em;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -115,6 +117,7 @@ blockquote, p {
     text-align: justify;
     text-justify: inter-word;
     word-wrap: break-word;
+    hyphens: auto;
 }
 
 strong {
