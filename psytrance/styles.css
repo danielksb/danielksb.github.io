@@ -1,32 +1,30 @@
+@font-face {
+    font-family: Inter;
+    src: url(/psytrance/Inter-Regular.ttf);
+}
+
 :root {
-    --text: #e5e7eb;
-    --visited-text: #aaa;
-    --background: #1f2937;
+    --text: #efefef;
     --gradient: linear-gradient(#1f2937, #61106d);
-    --border: #aaa;
     --background-header: #b11fc6;
     --button: #00b49c;
     --button-hover: #00ccb1;
     --black: #000;
     --blockquote-text: #2c2c2c;
     --blockquote: #d2d200;
-}
+}  
 
 body {
-    font-family: Metropolis, Inter, X-LocaleSpecific, Arial, sans-serif;
+    font-family: Inter, Arial, sans-serif;
     color: var(--text);
     font-weight: 100;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.75;
     background: var(--gradient);
 }
 
 a {
     color: var(--text);
-}
-
-a :visited {
-    color: var(--visited-text);
 }
 
 header {
@@ -76,7 +74,7 @@ nav ul li {
 
 nav,
 article {
-    max-width: 800px;
+    max-width: 48rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,7 +102,7 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     text-align: left;
 }
